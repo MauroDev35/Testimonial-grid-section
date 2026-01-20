@@ -1,7 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Estilos generales */
+html {
+  /* Escala tipografica */
+    font-size: 62.5%;
+
+  /* Familias tipograficas */
+    --font-1: "Barlow Semi Condensed", sans-serif;
+
+  /* Variables tipograficas */
+    --text-caption: 0.8rem;
+    --text-note: 1rem;
+    --text-base: 1.3rem;
+    --text-title: 2.6rem;
+
+  /* Colores */
+    --primary-1: hsl(263, 55%, 52%);
+    --primary-2: hsl(264, 82%, 80%);
+    --primary-3: hsl(260, 100%, 95%);
+
+    --neutral-1: hsl(0, 0%, 100%);
+    --neutral-2: hsl(214, 17%, 92%);
+    --neutral-3: hsl(0, 0%, 81%);
+    --neutral-4: hsl(224, 10%, 45%);
+    --neutral-5: hsl(217, 19%, 35%);
+    --neutral-6: hsl(219, 29%, 14%);
+
+    --accent-1: hsl(0, 0%, 7%);
+
+  /* Estilos para el scrollbar */
+    scrollbar-width: none;
+}
+
+body {
+    font-family: var(--font-1);
+    font-size: var(--text-base);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 40px 20px;
+}
+
+.testimonial-card {
+    background-color: var(--primary-1);
+
+    width: 330px;
+    height: auto;
+
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.testimonial-card p {
+    margin: 16px 0;
 }
 
 .testimonial-header {
