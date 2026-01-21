@@ -19,7 +19,7 @@ html {
     --text-caption: 0.8rem;
     --text-note: 1rem;
     --text-base: 1.3rem;
-    --text-title: 2.6rem;
+    --text-title: 2.4rem;
 
   /* Colores */
     --primary-1: hsl(263, 55%, 52%);
@@ -63,11 +63,47 @@ body {
     border-radius: 8px;
 }
 
-.testimonial-card p {
-    margin: 16px 0;
-}
-
 .testimonial-header {
     display: flex;
     align-items: center;
+
+    margin: 28px 28px 12px 28px;
+}
+
+.testimonial-header img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--neutral-1);
+    border-radius: 50%;
+}
+
+.testimonial-name {
+    color: var(--neutral-1);
+    margin-left: 15px;
+}
+
+.testimonial-name h3 {
+    font-size: var(--text-base);
+    font-weight: 500;
+}
+
+.testimonial-name p {
+    font-size: var(--text-base);
+    font-weight: 300;
+}
+
+.testimonial-quote {
+    margin: 0 28px 28px 28px;
+
+    color: var(--neutral-1);
+    font-size: var(--text-title);
+    font-weight: 500;
+}
+
+.testimonial-text {
+  margin: 0 28px 28px 28px;
+
+    color: var(--neutral-1);
+    font-size: var(--text-base);
+    font-weight: 300;
 }
